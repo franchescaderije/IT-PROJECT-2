@@ -1,0 +1,26 @@
+.w3-select{
+	width:100%;
+	border:none;
+	border-bottom:2px solid #ccc;
+	border-right:5px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+.w3-input{
+	display:block;
+	border:none;
+	border-bottom:1px solid #ccc;
+	width:100%;
+}
+.w3-border{
+	border:1px solid #ccc!important;
+}
+.w3-border-0{
+	border:0!important;
+}
+label{
+	font-size: 15px;
+}
+th{
+	font-size: 16px;
+}
