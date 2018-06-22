@@ -29,6 +29,15 @@
   <link rel="stylesheet" href="template/bower_components/bootstrap-daterangepicker/daterangepicker.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="template/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+  <!--MODAL-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--ADD NEW USER-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <title>Bootstrap Simple Registration Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -423,8 +432,71 @@
                       <button type="button" class="btn btn-info btn-normal">Search</button>
                     </span>
             </div>
+            <div class="container">
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add New User</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Add New User</h4>
+                      </div>
+                      <div class="modal-body">
+                          <div class="signup-form">
+                              <form action="/examples/actions/confirmation.php" method="post">
+                              <p class="hint-text">United Specialty Clinic</p>
+                                  <div class="form-group">
+                                <div class="row">
+                                  <div class="col-xs-6"><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div>
+                                  <div class="col-xs-6"><input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
+                                </div>          
+                                  </div>
+                                  <div class="form-group">
+                                    <input type="role" class="form-control" name="role" placeholder="Role Name" required="required">
+                                  </div>
+                                  <div class="form-group">
+                                    <input type="address" class="form-control" name="address" placeholder="Address" required="required">
+                                  </div>
+                                  <div class="form-group">
+                                    <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+                                  </div>
+                                  <div class="form-group">
+                                    <input type="contact" class="form-control" name="contact" placeholder="Contact" required="required">
+                                  </div>
+                              <div class="form-group">
+                                      <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+                                  </div>
+                              <div class="form-group">
+                                      <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+                                  </div>        
+                                  <div class="form-group">
+                                <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+                              </div>
+                              <div class="form-group">
+                                      <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
+                                  </div>
+                              </form>
+                            <div class="text-center">Already have an account? <a href="#">Sign in</a></div>
+                          </div>                      
+                          </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+              </div>  
+
           <!-- /.nav-tabs-custom -->        
         </section>
+
         <!-- /.Left col -->
         <!-- right col (We are only adding the ID to make the widgets sortable)-->
         <!-- right col -->
@@ -448,7 +520,8 @@
           <div class="box">
             <div class="box-header">
               <h3 class="box-title">Active Users</h3>
-              <button type="button" class="btn btn-info btn-normal"><a href="newusermngmnt.html">Add New User</a></button>
+
+
             </div>
             <!-- /.box-header -->
             <div class="box-body">
