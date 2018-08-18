@@ -29,16 +29,7 @@
   <link rel="stylesheet" href="template/bower_components/bootstrap-daterangepicker/daterangepicker.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="template/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-  <!--MODAL-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!--ADD NEW USER-->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-  <title>Bootstrap Simple Registration Form</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-
+  <link rel="stylesheet" href="template/bower_components/w3/css/w3.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -270,7 +261,7 @@
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="template/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Alexander Pierce</span>
+              <span class="hidden-xs">Juan Dela Cruz</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -278,7 +269,7 @@
                 <img src="template/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
-                  Alexander Pierce - Web Developer
+                  Juan Dela Cruz - Web Developer
                   <small>Member since Nov. 2012</small>
                 </p>
               </li>
@@ -323,14 +314,14 @@
           <img src="template/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Alexander Pierce</p>
+          <p>Juan Dela Cruz</p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
       <!-- search form -->
       <form action="#" method="get" class="sidebar-form">
         <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Search...">
+          <input type="text" name="q" class="w3-select" placeholder="Search...">
           <span class="input-group-btn">
                 <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
                 </button>
@@ -380,9 +371,9 @@
             <i class="fa fa-edit"></i> <span>ActivityLog</span>
           </a>
         </li>
-        <li>
-          <a href="UserManagement.html">
-            <i class="fa fa-envelope"></i> <span>User Management</span>
+            <li>
+          <a href="notification.html">
+            <i class="fa fa-envelope"></i> <span>Notification</span>
           </a>
         </li>
         <li>
@@ -397,13 +388,14 @@
 
   <!--------------------------------------------END of NAVIGATION -----------------------------------------!>
 
+
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        User Management
-        <small>United Specialty Clinic</small>
+        Dashboard
+        <small>Control panel</small>
 
       </h1>
       <ol class="breadcrumb">
@@ -411,210 +403,6 @@
         <li class="active">Dashboard</li>
       </ol>
     </section>
-
-     <!---------------------------------------------MAIN CONTENT-------------------------------------------->
-         <!-- Main content -->
-    <section class="content">
-      <!-- Small boxes (Stat box) -->
-      <div class="row">
-        
-      
-      </div>
-      <!-- /.row -->
-      <!-- Main row -->
-      <div class="row">
-        <!-- Left col -->
-        <section class="col-lg-7 connectedSortable">
-          <!-- Custom tabs (Search bar)-->
-          <div class="input-group margin">
-                <input type="text" class="form-control">
-                    <span class="input-group-btn">
-                      <button type="button" class="btn btn-info btn-normal">Search</button>
-                    </span>
-            </div>
-            <div class="container">
-                <!-- Trigger the modal with a button -->
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add New User</button>
-
-                <!-- Modal -->
-                <div class="modal fade" id="myModal" role="dialog">
-                  <div class="modal-dialog">
-                  
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Add New User</h4>
-                      </div>
-                      <div class="modal-body">
-                          <div class="signup-form">
-                              <form action="/examples/actions/confirmation.php" method="post">
-                              <p class="hint-text">United Specialty Clinic</p>
-                                  <div class="form-group">
-                                <div class="row">
-                                  <div class="col-xs-6"><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div>
-                                  <div class="col-xs-6"><input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
-                                </div>          
-                                  </div>
-                                  <div class="form-group">
-                                    <input type="role" class="form-control" name="role" placeholder="Role Name" required="required">
-                                  </div>
-                                  <div class="form-group">
-                                    <input type="address" class="form-control" name="address" placeholder="Address" required="required">
-                                  </div>
-                                  <div class="form-group">
-                                    <input type="email" class="form-control" name="email" placeholder="Email" required="required">
-                                  </div>
-                                  <div class="form-group">
-                                    <input type="contact" class="form-control" name="contact" placeholder="Contact" required="required">
-                                  </div>
-                              <div class="form-group">
-                                      <input type="password" class="form-control" name="password" placeholder="Password" required="required">
-                                  </div>
-                              <div class="form-group">
-                                      <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
-                                  </div>        
-                                  <div class="form-group">
-                                <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
-                              </div>
-                              <div class="form-group">
-                                      <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
-                                  </div>
-                              </form>
-                            <div class="text-center">Already have an account? <a href="#">Sign in</a></div>
-                          </div>                      
-                          </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      </div>
-                    </div>
-                    
-                  </div>
-                </div>
-                
-              </div>  
-
-          <!-- /.nav-tabs-custom -->        
-        </section>
-
-        <!-- /.Left col -->
-        <!-- right col (We are only adding the ID to make the widgets sortable)-->
-        <!-- right col -->
-      </div>
-      <!-- /.row (main row) -->
-      
-        <!-- Left col -->
-        
-          <!-- Custom tabs (Search bar)-->
-          
-                          
-            
-          <!-- /.nav-tabs-custom -->        
- 
-        <!-- /.Left col -->
-        <!-- right col (We are only adding the ID to make the widgets sortable)-->
-        <!-- right col -->
-    
-      
-
-          <div class="box">
-            <div class="box-header">
-              <h3 class="box-title">Active Users</h3>
-
-
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-              <div id="example2_wrapper" class="dataTables_wrapper form-inline dt-bootstrap"><div class="row"><div class="col-sm-6"></div><div class="col-sm-6"></div></div><div class="row"><div class="col-sm-12"><table id="example2" class="table table-bordered table-hover dataTable" role="grid" aria-describedby="example2_info">
-                <thead>
-                <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">FIRST NAME</th><th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending">LAST NAME</th><th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">ROLE NAME</th><th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">ADDRESS</th><th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">EMAIL</th><th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending">CONTACT</th></tr>
-                </thead>
-                <tbody>
-                <tr role="row" class="odd">
-                  <td class="sorting_1">Franchesca</td>
-                  <td>Derije</td>
-                  <td>Admin</td>
-                  <td>7114 Kundiman Street, Sampaloc</td>
-                  <td>chescaderije@gmail.com</td>
-                  <td>(632) 845-1324</td>
-                </tr><tr role="row" class="even">
-                  <td class="sorting_1">Danica</td>
-                  <td>Sheine</td>
-                  <td>Assistant Nurse</td>
-                  <td>Carmona, Makati City</td>
-                  <td>danica@gmail.com</td>
-                  <td>(632) 759-6680</td>
-                </tr><tr role="row" class="odd">
-                  <td class="sorting_1">Nica</td>
-                  <td>Custodio</td>
-                  <td>Admin</td>
-                  <td>1135 Metro Manila</td>
-                  <td>nica@gmail.com</td>
-                  <td>(632) 845-1395</td>
-                </tr><tr role="row" class="even">
-                  <td class="sorting_1">Drizzle</td>
-                  <td>Joy</td>
-                  <td>Doctor</td>
-                  <td>6784 Ayala Avenue cor. Herrera St.</td>
-                  <td>drizzlejoy@gmail.com</td>
-                  <td>(632) 845-1395</td>
-                </tr><tr role="row" class="odd">
-                  <td class="sorting_1">Joy</td>
-                  <td>Valdez</td>
-                  <td>Doctor</td>
-                  <td>Legaspi Village, Makati City</td>
-                  <td>joy@gmail.com</td>
-                  <td>(632) 845-1395</td>
-                </tr><tr role="row" class="even">
-                  <td class="sorting_1">Brian</td>
-                  <td>Daclison</td>
-                  <td>Doctor</td>
-                  <td>Sen. Gil Puyat Ave. cor. Makati Ave</td>
-                  <td>brian@gmail.com</td>
-                  <td>(632) 845-1395</td>
-                </tr><tr role="row" class="odd">
-                  <td class="sorting_1">Von</td>
-                  <td>Salazar</td>
-                  <td>Assistant Nurse</td>
-                  <td>209 Nicanor Garcia St., Barangay Bel-Air</td>
-                  <td>von@gmail.com</td>
-                  <td>(632) 845-1395</td>
-                </tr><tr role="row" class="even">
-                  <td class="sorting_1">Ojoj</td>
-                  <td>Dela Cruz</td>
-                  <td>Admin</td>
-                  <td>75 Swaziland St., Better Living Subdivision</td>
-                  <td>ojoj@gmail.com</td>
-                  <td>(632) 845-1395</td>
-                </tr><tr role="row" class="odd">
-                  <td class="sorting_1">Kyrie</td>
-                  <td>Cerezo</td>
-                  <td>Doctor</td>
-                  <td>Parañaque City, Philippines</td>
-                  <td>kyrie@gmail.com</td>
-                  <td>(632) 845-1395</td>
-                </tr><tr role="row" class="even">
-                  <td class="sorting_1">Renedez</td>
-                  <td>Mendoza</td>
-                  <td>Doctor</td>
-                  <td>F. Ortigas Jr. Road, Ortigas Center</td>
-                  <td>renedez@gmail.com</td>
-                  <td>(632) 845-1395</td>
-                </tr></tbody>
-                
-              </table></div></div><div class="row"><div class="col-sm-5"><div class="dataTables_info" id="example2_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div></div><div class="col-sm-7"><div class="dataTables_paginate paging_simple_numbers" id="example2_paginate"><ul class="pagination"><li class="paginate_button previous disabled" id="example2_previous"><a href="#" aria-controls="example2" data-dt-idx="0" tabindex="0">Previous</a></li><li class="paginate_button active"><a href="#" aria-controls="example2" data-dt-idx="1" tabindex="0">1</a></li><li class="paginate_button "><a href="#" aria-controls="example2" data-dt-idx="2" tabindex="0">2</a></li><li class="paginate_button "><a href="#" aria-controls="example2" data-dt-idx="3" tabindex="0">3</a></li><li class="paginate_button "><a href="#" aria-controls="example2" data-dt-idx="4" tabindex="0">4</a></li><li class="paginate_button "><a href="#" aria-controls="example2" data-dt-idx="5" tabindex="0">5</a></li><li class="paginate_button "><a href="#" aria-controls="example2" data-dt-idx="6" tabindex="0">6</a></li><li class="paginate_button next" id="example2_next"><a href="#" aria-controls="example2" data-dt-idx="7" tabindex="0">Next</a></li></ul></div></div></div></div>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          
-
-    </section>
-    <!-- /.content -->
-    </div>
-
-  <!-----------------------------------------------END OF MAIN CONTENT--------------------------------------->
-
-  
   
   <!-- /.content-wrapper -->
   <footer class="main-footer">
@@ -665,4 +453,3 @@
 <script src="template/dist/js/demo.js"></script>
 </body>
 </html>
-
