@@ -10,6 +10,8 @@
   <link rel="stylesheet" type="text/css" href="template/style.css">
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="template/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- w3 -->
+  <link rel="stylesheet" href="template/bower_components/w3/css/w3.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="template/bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
@@ -29,7 +31,7 @@
   <link rel="stylesheet" href="template/bower_components/bootstrap-daterangepicker/daterangepicker.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="template/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-  <link rel="stylesheet" href="template/bower_components/w3/css/w3.css">
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -176,7 +178,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="footer"><a href="#">View all</a></li>
+              <li class="footer"><a href="notification.html">View all</a></li>
             </ul>
           </li>
           <!-- Tasks: style can be found in dropdown.less -->
@@ -304,6 +306,11 @@
     </nav>
   </header>
   <!-- Left side column. contains the logo and sidebar -->
+
+
+
+
+
   <!----------------------------------------------------NAVIGATION----------------------------------->
   <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
@@ -321,7 +328,7 @@
       <!-- search form -->
       <form action="#" method="get" class="sidebar-form">
         <div class="input-group">
-          <input type="text" name="q" class="w3-select" placeholder="Search...">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
           <span class="input-group-btn">
                 <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
                 </button>
@@ -348,7 +355,6 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="Inventory/Vaccines.html"><i class="fa fa-circle-o"></i>Vaccines</a></li>
-            <li><a href="Inventory/Supplies.html"><i class="fa fa-circle-o"></i> Supplies</a></li>
             <li><a href="Inventory/Report.html"><i class="fa fa-circle-o"></i> Report</a></li>
           </ul>
         </li>
@@ -368,17 +374,22 @@
         </li>
         <li>
           <a href="ActivityLog.html">
-            <i class="fa fa-edit"></i> <span>ActivityLog</span>
+            <i class="fa fa-book"></i> <span>ActivityLog</span>
           </a>
         </li>
-            <li>
-          <a href="notification.html">
-            <i class="fa fa-envelope"></i> <span>Notification</span>
+        <li>
+          <a href="Report.html">
+            <i class="fa fa-edit"></i> <span>Report</span>
+          </a>
+        </li>
+        <li>
+          <a href="UserManagement.html">
+            <i class="fa fa-envelope"></i> <span>User Management</span>
           </a>
         </li>
         <li>
           <a href="Archive.html">
-            <i class="fa fa-envelope"></i> <span>Archive</span>
+            <i class="fa fa-archive"></i> <span>Archive</span>
           </a>
         </li>
       </ul>
@@ -386,7 +397,7 @@
     <!-- /.sidebar -->
   </aside>
 
-  <!--------------------------------------------END of NAVIGATION -----------------------------------------!>
+  <!--------------------------------------------END of NAVIGATION ----------------------------------------!>
 
   <div class="content-wrapper">
 
