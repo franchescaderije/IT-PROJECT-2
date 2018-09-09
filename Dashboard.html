@@ -29,6 +29,9 @@
   <link rel="stylesheet" href="template/bower_components/bootstrap-daterangepicker/daterangepicker.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="template/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+  <!--DataTable -->
+  <link rel="stylesheet" href="template/plugins/DataTables-1.10.18/css/jquery.dataTables.min.css">
+  
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -485,19 +488,11 @@
             <div class="box-header with-border">
               <h3 class="box-title">June 13, 2018</h3>
 
-              <div class="box-tools">
-                <div class="input-group input-group-sm" style="width: 150px;">
-                  <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
-
-                  <div class="input-group-btn">
-                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-                  </div>
-                </div>
-              </div>
+   
             <!-- /.box-header -->
             <div class="box-body">
               <div class="table-responsive">
-                <table class="table no-margin">
+                <table id="patientTable" class="table no-margin">
                   <thead>
                   <tr>
                     <th>Name</th>
@@ -648,11 +643,11 @@
         </section>
         <!-- right col -->
       </div>
-          
+        
 
     </section>
     <!-- /.content -->
-
+	</div> 
 
   <!-----------------------------------------------END OF MAIN CONTENT--------------------------------------->
 
@@ -666,7 +661,8 @@
     reserved.
   </footer>
 <!-- ./wrapper -->
-
+  </div> 
+  
 <!-- jQuery 3 -->
 <script src="template/bower_components/jquery/dist/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
@@ -704,5 +700,12 @@
 <script src="template/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="template/dist/js/demo.js"></script>
+<!-- DataTables -->
+<script src="template/plugins/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+<script>
+$(document).ready( function () {
+    $('#patientTable').DataTable();
+} );
+</script>
 </body>
 </html>
