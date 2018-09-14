@@ -14,7 +14,7 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form" action="../Dashboard.html">
+				<form class="login100-form validate-form" action="../Dashboard.html" method="post">
 					<h1 class="login100-form-title p-b-34">
 						United Specialty Clinic
 						<p>211 2/F Laperal Bldg. Session Road, Baguio City Benguet</p>
